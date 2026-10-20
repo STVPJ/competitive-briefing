@@ -1,0 +1,6 @@
+# Run every weekday at 06:00 local time. Edit paths to suit.
+# m h dom mon dow  command
+0 6 * * 1-5  cd /opt/competitive-briefing && .venv/bin/competitive-briefing >> logs/briefing.log 2>&1
+
+# Or with Docker (secrets in .env, state and output on the host):
+# 0 6 * * 1-5  docker run --rm --env-file /opt/competitive-briefing/.env -v /opt/competitive-briefing/data:/data -v /opt/competitive-briefing/output:/output competitive-briefing

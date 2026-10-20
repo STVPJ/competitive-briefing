@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "competitive-briefing"
+version = "0.1.0"
+description = "A daily competitive-intelligence briefing: code-owned gather and filter, one structured Claude call."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Steve James"}]
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=1.0,<2",
+    "httpx>=0.27",
+    "markdownify>=0.13",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23"]
+
+[project.scripts]
+competitive-briefing = "competitive_briefing.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+competitive_briefing = ["fixtures/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

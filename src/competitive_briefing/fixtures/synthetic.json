@@ -1,0 +1,187 @@
+{
+  "_comment": "Entirely fictional demo data. Companies, outlets, people and events are invented; all domains use the reserved .example TLD. Dates are offsets from 'now'.",
+  "entities": {
+    "kestrel-code": ["Kestrel Code", "Kestrel"],
+    "ploverline": ["Ploverline"],
+    "tern-labs": ["Tern Labs", "Tern CLI"],
+    "saira": ["Saíra", "Saira"]
+  },
+  "feeds": [
+    {
+      "title": "Kestrel Code launches background agents that open pull requests on their own",
+      "url": "https://devwire.example/2026/kestrel-code-background-agents",
+      "snippet": "Kestrel Code's new background agents pick up tickets from an issue tracker, work in a cloud sandbox and open a pull request for human review. \"We want the agent to be the teammate who never forgets the boring ticket,\" said chief executive Mara Quill. Available on the Team plan from today.",
+      "hours_ago": 9,
+      "query": "feed: DevWire",
+      "source": "DevWire"
+    },
+    {
+      "title": "Tern Labs cuts Tern CLI Pro price to $12 a month and adds a free tier",
+      "url": "https://stackreport.example/news/tern-cli-pricing-free-tier",
+      "snippet": "Tern Labs has halved the price of its terminal coding agent and introduced a free tier capped at 50 agent runs a month, a move analysts read as a land-grab ahead of larger rivals' pricing changes.",
+      "hours_ago": 14,
+      "query": "feed: The Stack Report",
+      "source": "The Stack Report"
+    },
+    {
+      "title": "Survey: 41% of engineering managers now track AI-assisted pull requests separately",
+      "url": "https://stackreport.example/research/ai-pr-tracking-survey",
+      "snippet": "A survey of 600 engineering managers by the fictional Delta Eng Council found 41% now label AI-assisted pull requests, mostly to measure review load rather than to restrict use.",
+      "hours_ago": 20,
+      "query": "feed: The Stack Report",
+      "source": "The Stack Report"
+    }
+  ],
+  "search": [
+    {
+      "title": "Kestrel Code launches background agents that open pull requests on their own",
+      "url": "https://devwire.example/2026/kestrel-code-background-agents/",
+      "snippet": "Search engine copy of the feed item: same URL with a trailing slash, so URL dedup keeps the feed copy.",
+      "hours_ago": 3,
+      "query": "\"Kestrel Code\""
+    },
+    {
+      "title": "Kestrel Code launches background agents to open pull requests",
+      "url": "https://techdaily.example/kestrel-background-agents-pr",
+      "snippet": "Kestrel adds agents that open PRs.",
+      "hours_ago": 7,
+      "query": "\"Kestrel Code\""
+    },
+    {
+      "title": "Ploverline raises $40M Series B to take its code review agent to enterprises",
+      "url": "https://venturenotes.example/ploverline-series-b-enterprise",
+      "snippet": "Code review start-up Ploverline has raised a $40M Series B led by fictional Harbour Capital, the round first reported in August, to take its code review agent to enterprises.",
+      "hours_ago": 11,
+      "query": "AI code review funding"
+    },
+    {
+      "title": "The 2025 guide to AI pair programmers",
+      "url": "https://blogfarm.example/guide-ai-pair-programmers-2025",
+      "snippet": "Re-crawled last night, so the search engine dates it as yesterday. The publisher's own date is over a year old.",
+      "hours_ago": 18,
+      "query": "AI coding assistant news"
+    },
+    {
+      "title": "AI news — Tech Daily",
+      "url": "https://techdaily.example/ai",
+      "snippet": "Section page: always looks fresh whatever story it carries.",
+      "hours_ago": 2,
+      "query": "AI coding assistant news"
+    },
+    {
+      "title": "Tech Daily — home",
+      "url": "https://techdaily.example/",
+      "snippet": "Home page.",
+      "hours_ago": 1,
+      "query": "AI coding assistant news"
+    },
+    {
+      "title": "Tern Labs open-sources its sandbox runtime",
+      "url": "https://devwire.example/2026/tern-sandbox-open-source",
+      "snippet": "Already reported yesterday: the same URL as yesterday's item, so it is tagged update with prior_history.",
+      "hours_ago": 30,
+      "query": "\"Tern Labs\""
+    },
+    {
+      "title": "Regulator opens consultation on AI-written code in safety-critical software",
+      "url": "https://policydesk.example/consultation-ai-code-safety-critical",
+      "snippet": "A fictional national software-safety regulator has opened a 12-week consultation on whether AI-generated code in safety-critical systems should carry provenance records. Responses close in January.",
+      "hours_ago": 16,
+      "query": "AI coding regulation"
+    }
+  ],
+  "reddit": [
+    {
+      "title": "[r/ExampleDevTeams] Our team tried background agents for a sprint. Review load doubled.",
+      "url": "https://www.reddit.com/r/ExampleDevTeams/comments/fx0001/",
+      "snippet": "We let agents pick up low-priority tickets for two weeks. Throughput looked great until we counted review hours: every agent PR needed a senior reviewer, and the nits were relentless.",
+      "hours_ago": 26,
+      "query": "reddit:trending",
+      "source": "reddit",
+      "score": 412,
+      "num_comments": 187
+    },
+    {
+      "title": "[r/ExampleCodingTools] Anyone moved from Tern CLI to Kestrel after the price change?",
+      "url": "https://www.reddit.com/r/ExampleCodingTools/comments/fx0002/",
+      "snippet": "Tern's free tier is tempting, but Kestrel's background agents are the first thing that has actually saved me time on chores.",
+      "hours_ago": 5,
+      "query": "reddit:r/ExampleCodingTools",
+      "source": "reddit",
+      "score": 0,
+      "num_comments": 0
+    }
+  ],
+  "regional": {
+    "pt-br": [
+      {
+        "title": "Startup brasileira Saíra lança assistente de código treinado em português",
+        "url": "https://tecnoblog-ficticio.example/saira-assistente-codigo-portugues",
+        "snippet": "A Saíra, de Recife, lançou um assistente de código que entende comentários e tickets em português e promete integração com os principais repositórios usados por bancos brasileiros.",
+        "hours_ago": 10,
+        "query": "assistente de código IA"
+      }
+    ]
+  },
+  "pages": {
+    "https://devwire.example/2026/kestrel-code-background-agents": {
+      "published_days_ago": 0, "published_hours_ago": 9, "og_type": "article",
+      "body": "Kestrel Code today launched background agents. Agents work in a cloud sandbox, run the test suite and open a pull request. \"We want the agent to be the teammate who never forgets the boring ticket,\" said Mara Quill. Team plan customers get 200 agent hours a month."
+    },
+    "https://techdaily.example/kestrel-background-agents-pr": {
+      "published_days_ago": 0, "published_hours_ago": 7, "og_type": "article",
+      "body": "Kestrel adds agents that open PRs."
+    },
+    "https://venturenotes.example/ploverline-series-b-enterprise": {
+      "published_days_ago": 0, "published_hours_ago": 11, "og_type": "article",
+      "body": "Ploverline's $40M Series B, first reported in August, will fund an enterprise sales team. The company says it now reviews 2 million pull requests a month."
+    },
+    "https://blogfarm.example/guide-ai-pair-programmers-2025": {
+      "published_days_ago": 400, "og_type": "article",
+      "body": "Our 2025 guide to AI pair programmers."
+    },
+    "https://techdaily.example/ai": {
+      "published_days_ago": 0, "og_type": "website",
+      "body": "Latest AI stories."
+    },
+    "https://devwire.example/2026/tern-sandbox-open-source": {
+      "published_days_ago": 1, "published_hours_ago": 6, "og_type": "article",
+      "body": "Tern Labs has open-sourced the sandbox runtime behind Tern CLI under the Apache 2.0 licence."
+    },
+    "https://policydesk.example/consultation-ai-code-safety-critical": {
+      "published_days_ago": 0, "published_hours_ago": 16, "og_type": "article",
+      "body": "The consultation asks whether AI-generated code in safety-critical systems should carry provenance records, and whether vendors of coding assistants should publish evaluation results. It closes in January."
+    },
+    "https://tecnoblog-ficticio.example/saira-assistente-codigo-portugues": {
+      "published_days_ago": 0, "published_hours_ago": 10, "og_type": "article",
+      "body": "A Saíra lançou hoje seu assistente de código em português."
+    }
+  },
+  "history": [
+    {
+      "days_ago": 1,
+      "headline": "Tern Labs open-sources its sandbox runtime",
+      "summary": "Tern Labs released the sandbox runtime behind Tern CLI under Apache 2.0.",
+      "sources": ["https://devwire.example/2026/tern-sandbox-open-source"],
+      "category": "product"
+    }
+  ],
+  "ledger_stories": [
+    {
+      "days_ago": 62,
+      "times": 2,
+      "headline": "Ploverline raises $40M Series B for its AI code review agent",
+      "summary": "Code review start-up Ploverline raised a $40M Series B led by Harbour Capital to expand its review agent.",
+      "urls": ["https://venturenotes.example/ploverline-40m-series-b"],
+      "category": "funding"
+    },
+    {
+      "days_ago": 1,
+      "times": 1,
+      "headline": "Tern Labs open-sources its sandbox runtime",
+      "summary": "Tern Labs released the sandbox runtime behind Tern CLI under Apache 2.0.",
+      "urls": ["https://devwire.example/2026/tern-sandbox-open-source"],
+      "category": "product"
+    }
+  ]
+}

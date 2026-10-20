@@ -1,0 +1,115 @@
+{
+  "_comment": "Example config: competitive intelligence on AI coding assistants. 'Acme Assist' / 'Acme' are placeholders: set perspective to your own product. {product}, {company} and {market} are substituted into edition text.",
+
+  "perspective": {
+    "product": "Acme Assist",
+    "company": "Acme",
+    "market": "AI coding assistants"
+  },
+
+  "competitors": [
+    {"name": "GitHub Copilot", "aliases": ["Copilot", "Copilot Workspace", "Copilot coding agent"],
+     "search_terms": ["\"GitHub Copilot\""], "daily": true},
+    {"name": "Cursor / Anysphere", "aliases": ["Cursor IDE", "Cursor editor"],
+     "search_terms": ["Cursor AI code editor OR Anysphere"], "daily": true},
+    {"name": "Claude Code", "aliases": [],
+     "search_terms": ["\"Claude Code\""], "daily": true},
+    {"name": "Windsurf", "aliases": ["Codeium"],
+     "search_terms": ["Windsurf AI IDE OR Codeium"], "daily": true},
+    {"name": "OpenAI Codex", "aliases": ["Codex CLI", "Codex"],
+     "search_terms": ["\"OpenAI Codex\" OR \"Codex CLI\""], "daily": true},
+    {"name": "Cline", "aliases": [],
+     "search_terms": ["Cline AI coding agent"], "daily": true},
+    {"name": "Amazon Q Developer / Kiro", "aliases": [], "search_terms": [], "daily": false},
+    {"name": "JetBrains AI / Junie", "aliases": [], "search_terms": [], "daily": false},
+    {"name": "Tabnine", "aliases": [], "search_terms": [], "daily": false}
+  ],
+
+  "_entities_comment": "Extra story-ledger entities: {canonical-slug: [surface forms]}. Only named forms, never generic phrases.",
+  "entities": {},
+
+  "broad_queries": [
+    "AI coding assistant news",
+    "AI coding agent launch",
+    "AI code review funding OR acquisition {year}",
+    "AI coding tools security OR regulation",
+    "developer survey AI coding tools {year}"
+  ],
+
+  "_feeds_comment": "filter=true keeps only items matching feed_keywords or a competitor name/alias. Optional per-feed user_agent for sites that bot-wall the default.",
+  "news_feeds": [
+    {"name": "GitHub Changelog", "url": "https://github.blog/changelog/feed/", "filter": true},
+    {"name": "GitHub Blog", "url": "https://github.blog/feed/", "filter": true},
+    {"name": "Hacker News (front page)", "url": "https://hnrss.org/frontpage", "filter": true},
+    {"name": "The Verge (AI)", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "filter": true},
+    {"name": "TechCrunch (AI)", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "filter": true},
+    {"name": "InfoQ (AI, ML & Data Engineering)", "url": "https://feed.infoq.com/ai-ml-data-eng/", "filter": true},
+    {"name": "The New Stack", "url": "https://thenewstack.io/feed/", "filter": true},
+    {"name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/", "filter": true},
+    {"name": "OpenAI News", "url": "https://openai.com/news/rss.xml", "filter": true}
+  ],
+  "feed_keywords": ["AI coding", "coding agent", "coding assistant", "code review", "pair programmer",
+                    "vibe coding", "developer tools", "IDE", "LLM", "agentic"],
+
+  "reddit": {
+    "subreddits": ["ChatGPTCoding", "cursor", "ExperiencedDevs"],
+    "keywords": ["AI", "LLM", "Copilot", "Cursor", "Claude", "Codex", "Windsurf", "Cline",
+                 "agent", "vibe coding", "autocomplete", "code review"],
+    "trending_lookback_days": 3,
+    "trending_min_score": 10,
+    "trending_min_comments": 8
+  },
+
+  "editorial": {
+    "model": "claude-sonnet-5-5",
+    "effort": "medium",
+    "max_tokens": 32000
+  },
+
+  "editions": {
+    "main": {
+      "title": "AI Coding Assistants — Competitive Briefing",
+      "reader": "a Product Manager working on {product} at {company}",
+      "reader_name": "Alex",
+      "regulatory_scope": "in the UK, EU and US",
+      "sections": [
+        "Product & Feature News",
+        "Pricing & Packaging",
+        "Deals & Funding",
+        "Market & Regulatory",
+        "Security & Controversies",
+        "Social Chatter (practitioner reactions from Reddit, Hacker News, social media)"
+      ],
+      "recipients": []
+    },
+
+    "pt-br": {
+      "title": "Assistentes de Código com IA — Briefing Competitivo",
+      "html_lang": "pt-BR",
+      "reader": "a Product Manager in Brazil working on {product} at {company} for the Brazilian and Latin American market",
+      "reader_name": "Bia",
+      "why_label": "Por que importa:",
+      "regulatory_scope": "in Brazil and Latin America (e.g. the AI bill PL 2338/2023, ANPD guidance on AI and personal data), plus major UK/EU/US developments that set precedent globally",
+      "extra_needs": "- The Brazilian and Latin American market for {market}: local players, global vendors entering the region, and adoption by companies there\n\nSCOPE: this is NOT a regional-only briefing. Global news that matters to anyone working on {product} — a competitor launch, a pricing change, a major deal — belongs in it exactly as it would in the main edition, whether or not it mentions Brazil. The regional focus ADDS Brazil and Latin America coverage on top. Regional searches return more low-value content than global ones: skip SEO/marketing posts, evergreen explainers and course adverts.\n",
+      "language_rule": "LANGUAGE: write the entire briefing (headings, summaries, commentary, action items) in Brazilian Portuguese (pt-BR). Keep product/company names and verbatim quotes in their original language; a quote in English or Spanish may be followed by a short pt-BR translation in brackets. reported_items headline/summary also in pt-BR.",
+      "sections": [
+        "Produtos e Novidades",
+        "Preços e Planos",
+        "Negócios e Investimentos",
+        "Mercado e Regulação",
+        "Segurança e Controvérsias",
+        "Comunidade (reações de desenvolvedores no Reddit, Hacker News e redes sociais)"
+      ],
+      "regional_queries": [
+        {"q": "assistente de código IA", "country": "BR", "search_lang": "pt-br"},
+        {"q": "GitHub Copilot OR Cursor desenvolvedores Brasil", "country": "BR", "search_lang": "pt-br"},
+        {"q": "regulação inteligência artificial PL 2338", "country": "BR", "search_lang": "pt-br"},
+        {"q": "asistente de programación IA", "country": "MX", "search_lang": "es"}
+      ],
+      "date_template": "{day_name}, {day} de {month_name} de {year}",
+      "day_names": ["segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado", "domingo"],
+      "month_names": ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"],
+      "recipients": []
+    }
+  }
+}
